@@ -1,0 +1,12 @@
+unit RecordProduto;
+
+interface
+
+type
+ TProduto = record
+
+ end;
+
+implementation
+
+end.

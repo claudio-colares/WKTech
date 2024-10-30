@@ -1,0 +1,14 @@
+unit RecordProduto;
+
+interface
+
+type
+ TProduto = record
+   Codigo     : Integer;
+   Descricao  : string;
+   PrecoVenda : Currency;
+ end;
+
+implementation
+
+end.

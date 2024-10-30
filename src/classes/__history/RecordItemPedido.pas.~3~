@@ -1,0 +1,18 @@
+unit RecordItemPedido;
+
+interface
+
+uses
+  RecordProduto;
+
+type
+  TItemPedido = record
+    Codigo        : Integer;
+    NumeroPedido  : Integer;
+    Produto       : TProduto;
+
+  end;
+
+implementation
+
+end.

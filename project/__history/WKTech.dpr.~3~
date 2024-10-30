@@ -1,0 +1,15 @@
+program WKTech;
+
+uses
+  Vcl.Forms,
+  RecordCliente in '..\src\classes\RecordCliente.pas',
+  uFrmPedido in '..\src\modulos\pedido\uFrmPedido.pas' {Form1};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.

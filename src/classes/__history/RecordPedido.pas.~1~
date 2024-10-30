@@ -1,0 +1,9 @@
+unit RecordPedido;
+
+interface
+ uses
+ RecordCliente,RecordItemPedido,SysUtils;
+
+implementation
+
+end.
