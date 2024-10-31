@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Model name="WKTech" id="WKTech" language="delphi">
+  <Diagram name="default" id="ID=14" metaclass="Namespace Diagram" file="default.txvpck.html">
+    <Property name="defaultDiagram">true</Property>
+    <DiagramReference id="ID=39" element="ID=3" metaclass="Namespace">
+      <Property name="Gradient color 1">255, 255, 255</Property>
+      <Property name="Gradient Mode">Vertical</Property>
+      <Property name="Gradient color 2">255, 255, 255</Property>
+      <Property name="Color Area">Whole Shape</Property>
+      <Property name="Gradient ON">False</Property>
+      <Property name="bounds">10,332,112,466</Property>
+      <DiagramReference id="ID=71" element="ID=15" metaclass="Module" />
+    </DiagramReference>
+    <DiagramReference id="ID=43" element="ID=4" metaclass="Namespace">
+      <Property name="Gradient color 1">255, 255, 255</Property>
+      <Property name="Gradient Mode">Vertical</Property>
+      <Property name="Gradient color 2">255, 255, 255</Property>
+      <Property name="Color Area">Whole Shape</Property>
+      <Property name="Gradient ON">False</Property>
+      <Property name="bounds">539,171,744,322</Property>
+      <DiagramReference id="ID=72" element="ID=40" metaclass="Module" />
+      <DiagramReference id="ID=73" element="ID=41" metaclass="Class">
+        <Property name="Persistent">False</Property>
+        <Property name="Abstract">False</Property>
+        <Property name="Sealed">False</Property>
+      </DiagramReference>
+    </DiagramReference>
+    <DiagramReference id="ID=47" element="ID=5" metaclass="Namespace">
+      <Property name="Gradient color 1">255, 255, 255</Property>
+      <Property name="Gradient Mode">Vertical</Property>
+      <Property name="Gradient color 2">255, 255, 255</Property>
+      <Property name="Color Area">Whole Shape</Property>
+      <Property name="Gradient ON">False</Property>
+      <Property name="bounds">356,171,529,322</Property>
+      <DiagramReference id="ID=88" element="ID=44" metaclass="Class">
+        <Property name="Persistent">False</Property>
+        <Property name="Abstract">False</Property>
+        <Property name="Extends">uFrmListCadastroTemplate.TFrmListCadastroTemplate</Property>
+        <Property name="Sealed">False</Property>
+      </DiagramReference>
+      <DiagramReference id="ID=89" element="ID=45" metaclass="Module" />
+    </DiagramReference>
+    <DiagramReference id="ID=48" element="ID=6" metaclass="Namespace">
+      <Property name="Gradient color 1">255, 255, 255</Property>
+      <Property name="Gradient Mode">Vertical</Property>
+      <Property name="Gradient color 2">255, 255, 255</Property>
+      <Property name="Color Area">Whole Shape</Property>
+      <Property name="Gradient ON">False</Property>
+      <Property name="bounds">180,171,346,322</Property>
+      <DiagramReference id="ID=94" element="ID=22" metaclass="Module" />
+      <DiagramReference id="ID=95" element="ID=23" metaclass="Struct" />
+    </DiagramReference>
+    <DiagramReference id="ID=49" element="ID=7" metaclass="Namespace">
+      <Property name="Gradient color 1">255, 255, 255</Property>
+      <Property name="Gradient Mode">Vertical</Property>
+      <Property name="Gradient color 2">255, 255, 255</Property>
+      <Property name="Color Area">Whole Shape</Property>
+      <Property name="Gradient ON">False</Property>
+      <Property name="bounds">122,332,222,451</Property>
+    </DiagramReference>
+    <DiagramReference id="ID=53" element="ID=8" metaclass="Namespace">
+      <Property name="Gradient color 1">255, 255, 255</Property>
+      <Property name="Gradient Mode">Vertical</Property>
+      <Property name="Gradient color 2">255, 255, 255</Property>
+      <Property name="Color Area">Whole Shape</Property>
+      <Property name="Gradient ON">False</Property>
+      <Property name="bounds">10,171,170,322</Property>
+      <DiagramReference id="ID=110" element="ID=50" metaclass="Module" />
+      <DiagramReference id="ID=111" element="ID=51" metaclass="Struct" />
+    </DiagramReference>
+    <DiagramReference id="ID=57" element="ID=9" metaclass="Namespace">
+      <Property name="Gradient color 1">255, 255, 255</Property>
+      <Property name="Gradient Mode">Vertical</Property>
+      <Property name="Gradient color 2">255, 255, 255</Property>
+      <Property name="Color Area">Whole Shape</Property>
+      <Property name="Gradient ON">False</Property>
+      <Property name="bounds">613,10,740,161</Property>
+      <DiagramReference id="ID=118" element="ID=54" metaclass="Class">
+        <Property name="Persistent">False</Property>
+        <Property name="Abstract">False</Property>
+        <Property name="Sealed">False</Property>
+      </DiagramReference>
+      <DiagramReference id="ID=119" element="ID=55" metaclass="Module" />
+    </DiagramReference>
+    <DiagramReference id="ID=61" element="ID=10" metaclass="Namespace">
+      <Property name="Gradient color 1">255, 255, 255</Property>
+      <Property name="Gradient Mode">Vertical</Property>
+      <Property name="Gradient color 2">255, 255, 255</Property>
+      <Property name="Color Area">Whole Shape</Property>
+      <Property name="Gradient ON">False</Property>
+      <Property name="bounds">445,10,603,161</Property>
+      <DiagramReference id="ID=174" element="ID=58" metaclass="Struct" />
+      <DiagramReference id="ID=175" element="ID=59" metaclass="Module" />
+    </DiagramReference>
+    <DiagramReference id="ID=65" element="ID=11" metaclass="Namespace">
+      <Property name="Gradient color 1">255, 255, 255</Property>
+      <Property name="Gradient Mode">Vertical</Property>
+      <Property name="Gradient color 2">255, 255, 255</Property>
+      <Property name="Color Area">Whole Shape</Property>
+      <Property name="Gradient ON">False</Property>
+      <Property name="bounds">297,10,435,161</Property>
+      <DiagramReference id="ID=185" element="ID=62" metaclass="Struct" />
+      <DiagramReference id="ID=186" element="ID=63" metaclass="Module" />
+    </DiagramReference>
+    <DiagramReference id="ID=69" element="ID=12" metaclass="Namespace">
+      <Property name="Gradient color 1">255, 255, 255</Property>
+      <Property name="Gradient Mode">Vertical</Property>
+      <Property name="Gradient color 2">255, 255, 255</Property>
+      <Property name="Color Area">Whole Shape</Property>
+      <Property name="Gradient ON">False</Property>
+      <Property name="bounds">154,10,287,161</Property>
+      <DiagramReference id="ID=191" element="ID=66" metaclass="Module" />
+      <DiagramReference id="ID=192" element="ID=67" metaclass="Struct" />
+    </DiagramReference>
+    <DiagramReference id="ID=70" element="ID=13" metaclass="Namespace">
+      <Property name="Gradient color 1">255, 255, 255</Property>
+      <Property name="Gradient Mode">Vertical</Property>
+      <Property name="Gradient color 2">255, 255, 255</Property>
+      <Property name="Color Area">Whole Shape</Property>
+      <Property name="Gradient ON">False</Property>
+      <Property name="bounds">10,10,144,161</Property>
+      <DiagramReference id="ID=204" element="ID=26" metaclass="Struct" />
+      <DiagramReference id="ID=205" element="ID=27" metaclass="Module" />
+    </DiagramReference>
+  </Diagram>
+  <Package name="WKTech" id="ID=3">
+    <Classifier name="globals WKTech" id="ID=15" type="Module" visibility="public">
+      <Uses />
+    </Classifier>
+  </Package>
+  <Package name="uFrmListCadastroTemplate" id="ID=4">
+    <Classifier name="TFrmListCadastroTemplate" id="ID=41" type="Class" visibility="public">
+      <Property name="Persistent">False</Property>
+      <Property name="Abstract">False</Property>
+      <Property name="Sealed">False</Property>
+      <Uses />
+    </Classifier>
+    <Classifier name="globals uFrmListCadastroTemplate" id="ID=40" type="Module" visibility="public">
+      <Link targetName="FrmListCadastroTemplate" id="ID=75" metaclass="Association Link" idref="ID=41">
+        <Property name="Type">association</Property>
+        <Property name="Supplier">TFrmListCadastroTemplate</Property>
+        <Property name="Directed">False</Property>
+        <Property name="Client">FrmListCadastroTemplate</Property>
+      </Link>
+      <Uses />
+    </Classifier>
+  </Package>
+  <Package name="uFrmListagemCliente" id="ID=5">
+    <Classifier name="TFrmListagemCliente" id="ID=44" type="Class" visibility="public">
+      <Property name="Persistent">False</Property>
+      <Property name="Abstract">False</Property>
+      <Property name="Extends">uFrmListCadastroTemplate.TFrmListCadastroTemplate</Property>
+      <Property name="Sealed">False</Property>
+      <Link targetName="uFrmListCadastroTemplate.TFrmListCadastroTemplate" id="ID=91" metaclass="Generalization Link" idref="ID=41">
+        <Property name="Supplier">TFrmListCadastroTemplate</Property>
+        <Property name="Client">TFrmListagemCliente</Property>
+      </Link>
+      <Extends idref="ID=41" refFN="uFrmListCadastroTemplate.TFrmListCadastroTemplate" />
+      <Uses />
+    </Classifier>
+    <Classifier name="globals uFrmListagemCliente" id="ID=45" type="Module" visibility="public">
+      <Link targetName="FrmListagemCliente" id="ID=93" metaclass="Association Link" idref="ID=44">
+        <Property name="Type">association</Property>
+        <Property name="Supplier">TFrmListagemCliente</Property>
+        <Property name="Directed">False</Property>
+        <Property name="Client">FrmListagemCliente</Property>
+      </Link>
+      <Uses />
+    </Classifier>
+  </Package>
+  <Package name="RecordBancoDados" id="ID=6">
+    <Classifier name="globals RecordBancoDados" id="ID=22" type="Module" visibility="public">
+      <Uses />
+    </Classifier>
+    <Classifier name="TBancoDados" id="ID=23" type="Struct" visibility="public">
+      <Uses />
+    </Classifier>
+  </Package>
+  <Package name="App" id="ID=7">
+    <Package name="Constantes" id="ID=17" />
+  </Package>
+  <Package name="RecordPedidoDAO" id="ID=8">
+    <Classifier name="globals RecordPedidoDAO" id="ID=50" type="Module" visibility="public">
+      <Uses />
+    </Classifier>
+    <Classifier name="TPedidoDAO" id="ID=51" type="Struct" visibility="public">
+      <Uses />
+    </Classifier>
+  </Package>
+  <Package name="uFrmPedido" id="ID=9">
+    <Classifier name="TFrmPedidoVenda" id="ID=54" type="Class" visibility="public">
+      <Property name="Persistent">False</Property>
+      <Property name="Abstract">False</Property>
+      <Property name="Sealed">False</Property>
+      <Uses />
+    </Classifier>
+    <Classifier name="globals uFrmPedido" id="ID=55" type="Module" visibility="public">
+      <Link targetName="FrmPedidoVenda" id="ID=172" metaclass="Association Link" idref="ID=54">
+        <Property name="Type">association</Property>
+        <Property name="Supplier">TFrmPedidoVenda</Property>
+        <Property name="Directed">False</Property>
+        <Property name="Client">FrmPedidoVenda</Property>
+      </Link>
+      <Link targetName="FBancoDados" id="ID=173" metaclass="Association Link" idref="ID=23">
+        <Property name="Type">association</Property>
+        <Property name="Supplier">TBancoDados</Property>
+        <Property name="Directed">False</Property>
+        <Property name="Client">FBancoDados</Property>
+      </Link>
+      <Uses />
+    </Classifier>
+  </Package>
+  <Package name="RecordItemPedido" id="ID=10">
+    <Classifier name="TItemPedido" id="ID=58" type="Struct" visibility="public">
+      <Link targetName="Produto" id="ID=184" metaclass="Association Link" idref="ID=62">
+        <Property name="Type">association</Property>
+        <Property name="Supplier">TProduto</Property>
+        <Property name="Directed">False</Property>
+        <Property name="Client">Produto</Property>
+      </Link>
+      <Uses />
+    </Classifier>
+    <Classifier name="globals RecordItemPedido" id="ID=59" type="Module" visibility="public">
+      <Uses />
+    </Classifier>
+  </Package>
+  <Package name="RecordProduto" id="ID=11">
+    <Classifier name="TProduto" id="ID=62" type="Struct" visibility="public">
+      <Uses />
+    </Classifier>
+    <Classifier name="globals RecordProduto" id="ID=63" type="Module" visibility="public">
+      <Uses />
+    </Classifier>
+  </Package>
+  <Package name="RecordPedido" id="ID=12">
+    <Classifier name="globals RecordPedido" id="ID=66" type="Module" visibility="public">
+      <Uses />
+    </Classifier>
+    <Classifier name="TPedido" id="ID=67" type="Struct" visibility="public">
+      <Link targetName="Cliente" id="ID=203" metaclass="Association Link" idref="ID=26">
+        <Property name="Type">association</Property>
+        <Property name="Supplier">TCliente</Property>
+        <Property name="Directed">False</Property>
+        <Property name="Client">Cliente</Property>
+      </Link>
+      <Uses />
+    </Classifier>
+  </Package>
+  <Package name="RecordCliente" id="ID=13">
+    <Classifier name="TCliente" id="ID=26" type="Struct" visibility="public">
+      <Uses />
+    </Classifier>
+    <Classifier name="globals RecordCliente" id="ID=27" type="Module" visibility="public">
+      <Uses />
+    </Classifier>
+  </Package>
+</Model>

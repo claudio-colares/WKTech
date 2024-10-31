@@ -103,25 +103,51 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="..\src\classes\RecordCliente.pas"/>
-        <DCCReference Include="..\src\modulos\pedido\uFrmPedido.pas">
-            <Form>FrmPedidoVenda</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
-        <DCCReference Include="..\src\classes\RecordProduto.pas"/>
-        <DCCReference Include="..\src\classes\RecordItemPedido.pas"/>
-        <DCCReference Include="..\src\classes\RecordPedido.pas"/>
-        <DCCReference Include="..\src\classes\RecordPedidoDAO.pas"/>
-        <DCCReference Include="..\src\classes\RecordBancoDados.pas"/>
-        <DCCReference Include="..\src\classes\App.Constantes.pas"/>
-        <DCCReference Include="..\src\template\uFrmListCadastroTemplate.pas">
+        <DCCReference Include="..\src\controller\RecordCliente.pas"/>
+        <DCCReference Include="..\src\controller\RecordItemPedido.pas"/>
+        <DCCReference Include="..\src\controller\RecordPedido.pas"/>
+        <DCCReference Include="..\src\controller\RecordProduto.pas"/>
+        <DCCReference Include="..\src\model\RecordBancoDados.pas"/>
+        <DCCReference Include="..\src\model\RecordPedidoDAO.pas"/>
+        <DCCReference Include="..\src\utils\Constantes.pas"/>
+        <DCCReference Include="..\src\view\template\uFrmListCadastroTemplate.pas">
             <Form>FrmListCadastroTemplate</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="..\src\modulos\uFrmListagemCliente.pas">
+        <DCCReference Include="..\src\view\cliente\uFrmListagemCliente.pas">
             <Form>FrmListagemCliente</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="..\src\view\pedido\uFrmPedido.pas">
+            <Form>FrmPedidoVenda</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <None Include="ModelSupport_WKTech\default.txaPackage"/>
+        <None Include="ModelSupport_WKTech\default.txvpck"/>
+        <None Include="ModelSupport_WKTech\App\default.txvpck"/>
+        <None Include="ModelSupport_WKTech\WKTech\default.txvpck"/>
+        <None Include="ModelSupport_WKTech\App\Constantes\default.txvpck"/>
+        <None Include="ModelSupport_WKTech\RecordBancoDados\default.txvpck"/>
+        <None Include="ModelSupport_WKTech\RecordCliente\default.txvpck"/>
+        <None Include="ModelSupport_WKTech\RecordCliente\default.txaPackage"/>
+        <None Include="ModelSupport_WKTech\uFrmListCadastroTemplate\default.txvpck"/>
+        <None Include="ModelSupport_WKTech\uFrmListagemCliente\default.txvpck"/>
+        <None Include="ModelSupport_WKTech\RecordPedidoDAO\default.txvpck"/>
+        <None Include="ModelSupport_WKTech\uFrmPedido\default.txvpck"/>
+        <None Include="ModelSupport_WKTech\RecordItemPedido\default.txvpck"/>
+        <None Include="ModelSupport_WKTech\RecordProduto\default.txvpck"/>
+        <None Include="ModelSupport_WKTech\RecordPedido\default.txvpck"/>
+        <None Include="ModelSupport_WKTech\RecordPedidoDAO\default.txaPackage"/>
+        <None Include="ModelSupport_WKTech\RecordPedido\default.txaPackage"/>
+        <None Include="ModelSupport_WKTech\uFrmPedido\default.txaPackage"/>
+        <None Include="ModelSupport_WKTech\RecordItemPedido\default.txaPackage"/>
+        <None Include="ModelSupport_WKTech\uFrmListagemCliente\default.txaPackage"/>
+        <None Include="ModelSupport_WKTech\RecordProduto\default.txaPackage"/>
+        <None Include="ModelSupport_WKTech\WKTech\default.txaPackage"/>
+        <None Include="ModelSupport_WKTech\App\default.txaPackage"/>
+        <None Include="ModelSupport_WKTech\RecordBancoDados\default.txaPackage"/>
+        <None Include="ModelSupport_WKTech\uFrmListCadastroTemplate\default.txaPackage"/>
+        <None Include="ModelSupport_WKTech\App\Constantes\default.txaPackage"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -150,9 +176,165 @@
                 </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="3">
+                <DeployFile LocalName="ModelSupport_WKTech\WKTech\default.txaPackage" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_WKTech\default.txaPackage" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_WKTech\RecordBancoDados\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_WKTech\RecordItemPedido\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_WKTech\RecordCliente\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_WKTech\uFrmListagemCliente\default.txaPackage" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_WKTech\RecordCliente\default.txaPackage" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_WKTech\uFrmPedido\default.txaPackage" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_WKTech\RecordPedidoDAO\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_WKTech\App\default.txaPackage" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_WKTech\App\Constantes\default.txaPackage" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_WKTech\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_WKTech\RecordBancoDados\default.txaPackage" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_WKTech\RecordPedidoDAO\default.txaPackage" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_WKTech\uFrmPedido\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_WKTech\RecordPedido\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_WKTech\uFrmListagemCliente\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_WKTech\uFrmListCadastroTemplate\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_WKTech\WKTech\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_WKTech\RecordPedido\default.txaPackage" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_WKTech\RecordItemPedido\default.txaPackage" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_WKTech\App\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="..\bin\WKTech.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
                         <RemoteName>WKTech.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_WKTech\RecordProduto\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_WKTech\RecordProduto\default.txaPackage" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_WKTech\uFrmListCadastroTemplate\default.txaPackage" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_WKTech\App\Constantes\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -931,6 +1113,7 @@
                 <Platform value="Win32">True</Platform>
                 <Platform value="Win64">False</Platform>
             </Platforms>
+            <ModelSupport>True</ModelSupport>
         </BorlandProject>
         <ProjectFileVersion>12</ProjectFileVersion>
     </ProjectExtensions>
