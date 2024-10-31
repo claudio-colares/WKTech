@@ -2,14 +2,14 @@ CREATE DATABASE IF NOT EXISTS WKTechBD;
 USE WKTechBD;
 
 CREATE TABLE clientes (
-    codigo INT PRIMARY KEY,
+    codigo INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(200) NOT NULL,
     cidade VARCHAR(100),
     uf CHAR(2)
 );
 
 CREATE TABLE produtos (
-    codigo INT PRIMARY KEY,
+    codigo INT PRIMARY KEY AUTO_INCREMENT,
     descricao VARCHAR(200) NOT NULL,
     preco_venda DECIMAL(10, 2) NOT NULL
 );

@@ -18,7 +18,6 @@ interface
       procedure AlterarItem(item: TItemPedido);
       procedure AtualizarValorTotal;
       procedure LimparItens;
-
   end;
 
 implementation

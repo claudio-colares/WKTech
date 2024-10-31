@@ -1,0 +1,33 @@
+unit App.Constantes;
+
+interface
+
+const
+  // --------------------------------------------------------------------
+  // Banco de Dados - FireDAC (Configurações)
+  // --------------------------------------------------------------------
+  _DATABASE_DRIVER    = 'MySQL';
+  _DATABASE_HOST      = 'localhost';
+  _DATABASE_NOME      = 'wktechdb';
+  _DATABASE_PORTA     = '3306';
+  _DATABASE_USUARIO   = 'root';
+  _DATABASE_SENHA     = 'masterkey';
+  _DATABASE_LIB       = 'libmysql.dll';
+  // --------------------------------------------------------------------
+
+
+  // --------------------------------------------------------------------
+  // Arquivo INI para conexao
+  // --------------------------------------------------------------------
+  _ARQUIVO_INI        = 'DBconfig.ini';
+
+  _SECAO_SERVIDOR     = 'SERVIDOR';
+  _CHAVE_BASEDADOS    = 'BASEDADOS';
+  _CHAVE_PORTA        = 'PORTA';
+  _CHAVE_USUARIO      = 'USUARIO';
+  _CHAVE_SENHA        = 'SENHA';
+  // --------------------------------------------------------------------
+
+implementation
+
+end.

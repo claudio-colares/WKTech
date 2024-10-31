@@ -3,19 +3,30 @@
 	<Transactions>
     <Transaction>2024/07/23 16:03:14.000.932,=C:\Users\claud\OneDriveOLD\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2024/10/30 08:58:00.000.412,=C:\Users\claud\OneDriveOLD\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2024/10/30 08:59:13.000.256,C:\Users\claud\OneDriveOLD\Documentos\Embarcadero\Studio\Projects\Unit1.pas=D:\Projetos\Delphi\WKTech\src\pedido\uFrmPedido.pas</Transaction>
-    <Transaction>2024/10/30 08:59:13.000.256,C:\Users\claud\OneDriveOLD\Documentos\Embarcadero\Studio\Projects\Unit1.dfm=D:\Projetos\Delphi\WKTech\src\pedido\uFrmPedido.dfm</Transaction>
-    <Transaction>2024/10/30 08:59:42.000.912,C:\Users\claud\OneDriveOLD\Documentos\Embarcadero\Studio\Projects\Project1.dproj=D:\Projetos\Delphi\WKTech\project\WKTech.dproj</Transaction>
+    <Transaction>2024/10/30 08:59:13.000.256,D:\Projetos\Delphi\WKTech\src\pedido\uFrmPedido.dfm=C:\Users\claud\OneDriveOLD\Documentos\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2024/10/30 08:59:13.000.256,D:\Projetos\Delphi\WKTech\src\pedido\uFrmPedido.pas=C:\Users\claud\OneDriveOLD\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/10/30 08:59:42.000.912,D:\Projetos\Delphi\WKTech\project\WKTech.dproj=C:\Users\claud\OneDriveOLD\Documentos\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
     <Transaction>2024/10/30 09:33:17.000.553,=D:\Projetos\Delphi\WKTech\project\Unit1.pas</Transaction>
-    <Transaction>2024/10/30 09:38:29.000.553,D:\Projetos\Delphi\WKTech\project\Unit1.pas=D:\Projetos\Delphi\WKTech\src\classes\RecordCliente.pas</Transaction>
+    <Transaction>2024/10/30 09:38:29.000.553,D:\Projetos\Delphi\WKTech\src\classes\RecordCliente.pas=D:\Projetos\Delphi\WKTech\project\Unit1.pas</Transaction>
     <Transaction>2024/10/30 10:07:56.000.740,=D:\Projetos\Delphi\WKTech\src\modulos\pedido\uFrmPedido.pas</Transaction>
     <Transaction>2024/10/30 10:08:26.000.787,=D:\Projetos\Delphi\WKTech\project\Unit1.pas</Transaction>
-    <Transaction>2024/10/30 10:09:44.000.459,D:\Projetos\Delphi\WKTech\src\classes\RecordProduto.pas=D:\Projetos\Delphi\WKTech\project\Unit1.pas</Transaction>
+    <Transaction>2024/10/30 10:09:44.000.459,D:\Projetos\Delphi\WKTech\project\Unit1.pas=D:\Projetos\Delphi\WKTech\src\classes\RecordProduto.pas</Transaction>
     <Transaction>2024/10/30 10:12:36.000.693,=D:\Projetos\Delphi\WKTech\project\Unit1.pas</Transaction>
-    <Transaction>2024/10/30 10:27:09.000.615,D:\Projetos\Delphi\WKTech\src\classes\RecordItemPedido.pas=D:\Projetos\Delphi\WKTech\project\Unit1.pas</Transaction>
+    <Transaction>2024/10/30 10:27:09.000.615,D:\Projetos\Delphi\WKTech\project\Unit1.pas=D:\Projetos\Delphi\WKTech\src\classes\RecordItemPedido.pas</Transaction>
     <Transaction>2024/10/30 10:40:06.000.396,=D:\Projetos\Delphi\WKTech\project\Unit1.pas</Transaction>
-    <Transaction>2024/10/30 10:41:21.000.099,D:\Projetos\Delphi\WKTech\project\Unit1.pas=D:\Projetos\Delphi\WKTech\src\classes\RecordPedido.pas</Transaction>
+    <Transaction>2024/10/30 10:41:21.000.099,D:\Projetos\Delphi\WKTech\src\classes\RecordPedido.pas=D:\Projetos\Delphi\WKTech\project\Unit1.pas</Transaction>
     <Transaction>2024/10/30 11:01:57.000.443,=D:\Projetos\Delphi\WKTech\project\Unit1.pas</Transaction>
-    <Transaction>2024/10/30 11:07:47.000.585,D:\Projetos\Delphi\WKTech\project\Unit1.pas=D:\Projetos\Delphi\WKTech\src\classes\RecordPedidoDAO.pas</Transaction>
+    <Transaction>2024/10/30 11:07:47.000.585,D:\Projetos\Delphi\WKTech\src\classes\RecordPedidoDAO.pas=D:\Projetos\Delphi\WKTech\project\Unit1.pas</Transaction>
+    <Transaction>2024/10/31 09:25:13.000.492,=D:\Projetos\Delphi\WKTech\project\Unit1.pas</Transaction>
+    <Transaction>2024/10/31 09:27:19.000.726,D:\Projetos\Delphi\WKTech\project\Unit1.pas=D:\Projetos\Delphi\WKTech\src\classes\RecordBancoDados.pas</Transaction>
+    <Transaction>2024/10/31 09:28:57.000.461,=D:\Projetos\Delphi\WKTech\project\Unit1.pas</Transaction>
+    <Transaction>2024/10/31 09:29:59.000.304,D:\Projetos\Delphi\WKTech\project\Unit1.pas=D:\Projetos\Delphi\WKTech\src\classes\App.Constantes.pas</Transaction>
+    <Transaction>2024/10/31 15:09:45.940,=D:\Projetos\Delphi\WKTech\project\Unit1.pas</Transaction>
+    <Transaction>2024/10/31 15:10:42.815,D:\Projetos\Delphi\WKTech\src\template\uFrmListCadastroTemplate.pas=D:\Projetos\Delphi\WKTech\project\Unit1.pas</Transaction>
+    <Transaction>2024/10/31 15:10:42.815,D:\Projetos\Delphi\WKTech\src\template\uFrmListCadastroTemplate.dfm=D:\Projetos\Delphi\WKTech\project\Unit1.dfm</Transaction>
+    <Transaction>2024/10/31 15:22:42.425,=D:\Projetos\Delphi\WKTech\project\Unit1.pas</Transaction>
+    <Transaction>2024/10/31 15:23:06.129,=D:\Projetos\Delphi\WKTech\project\Unit1.pas</Transaction>
+    <Transaction>2024/10/31 15:23:51.487,D:\Projetos\Delphi\WKTech\src\modulos\uFrmListagemCliente.dfm=D:\Projetos\Delphi\WKTech\project\Unit1.dfm</Transaction>
+    <Transaction>2024/10/31 15:23:51.487,D:\Projetos\Delphi\WKTech\src\modulos\uFrmListagemCliente.pas=D:\Projetos\Delphi\WKTech\project\Unit1.pas</Transaction>
   </Transactions>
 </BorlandProject>
