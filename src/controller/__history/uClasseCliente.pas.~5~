@@ -1,0 +1,70 @@
+unit uClasseCliente;
+
+interface
+
+uses
+  FireDAC.Comp.Client;
+
+type
+  TCliente = class
+  private
+    FCodigo: Integer;
+    FNome  : string;
+    FCidade: string;
+    FUF    : string;
+
+
+  public
+    constructor Create(AConexao: TFDConnection);
+    function GetClienteByID(IDCliente: Integer): TCliente;
+    procedure Limpar;
+
+
+    property Codigo: Integer read FCodigo write FCodigo;
+    property Nome: string read FNome write FNome;
+    property Cidade: string read FCidade write FCidade;
+    property UF: string read FUF write FUF;
+  end;
+
+implementation
+
+
+function TCliente.GetClienteByID(IDCliente: Integer): TCliente;
+var
+  Cliente : TCliente;
+  QryDados: TFDQuery;
+  Conexao : TFDConnection;
+begin
+   Result   := nil;
+   QryDados := TFDQuery.Create(nil) ;
+  try
+
+
+
+    try
+
+    finally
+
+    end;
+
+  Cliente := TCliente.Create;
+
+
+
+
+  finally
+     Result  := Cliente;
+     Cliente.Free;
+  end;
+
+end;
+
+procedure TCliente.Limpar;
+begin
+  FCodigo := 0;
+  FNome   := '';
+  FCidade := '';
+  FUF     := '';
+end;
+
+end.

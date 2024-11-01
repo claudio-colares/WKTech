@@ -9,10 +9,12 @@ type
   TPedido = class
   private
     FNumeroPedido: Integer;
-    FDataEmissao: TDate;
-    FCliente: TCliente;
-    FItens: TObjectList<TItemPedido>;
-    FValorTotal: Currency;
+    FDataEmissao : TDate;
+    FCliente     : TCliente;
+    FItens       : TObjectList<TItemPedido>;
+    FValorTotal  : Currency;
+
+
   public
     constructor Create;
     destructor Destroy; override;
@@ -30,10 +32,12 @@ type
 
 implementation
 
+uses uFrmPedido;
+
 constructor TPedido.Create;
 begin
-  FCliente := TCliente.Create;
-  FItens := TObjectList<TItemPedido>.Create;
+  FCliente := TCliente.Create(FrmPedidoVenda.DBConexao);
+  FItens   := TObjectList<TItemPedido>.Create;
 end;
 
 destructor TPedido.Destroy;
@@ -56,18 +60,18 @@ end;
 
 procedure TPedido.AtualizarValorTotal;
 var
-  Item: TItemPedido;
+  item: TItemPedido;
 begin
   FValorTotal := 0;
-  for Item in FItens do
-    FValorTotal := FValorTotal + Item.ValorTotal;
+  for item in FItens do
+    FValorTotal := FValorTotal + item.ValorTotal;
 end;
 
 procedure TPedido.Limpar;
 begin
   FNumeroPedido := 0;
-  FDataEmissao := Now;
-  FValorTotal := 0;
+  FDataEmissao  := Now;
+  FValorTotal   := 0;
   FCliente.Limpar;
   FItens.Clear;
 end;
@@ -79,4 +83,3 @@ begin
 end;
 
 end.
-

@@ -3,8 +3,8 @@
 	<Transactions>
     <Transaction>2024/07/23 16:03:14.000.932,=C:\Users\claud\OneDriveOLD\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2024/10/30 08:58:00.000.412,=C:\Users\claud\OneDriveOLD\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2024/10/30 08:59:13.000.256,C:\Users\claud\OneDriveOLD\Documentos\Embarcadero\Studio\Projects\Unit1.pas=D:\Projetos\Delphi\WKTech\src\pedido\uFrmPedido.pas</Transaction>
     <Transaction>2024/10/30 08:59:13.000.256,C:\Users\claud\OneDriveOLD\Documentos\Embarcadero\Studio\Projects\Unit1.dfm=D:\Projetos\Delphi\WKTech\src\pedido\uFrmPedido.dfm</Transaction>
+    <Transaction>2024/10/30 08:59:13.000.256,C:\Users\claud\OneDriveOLD\Documentos\Embarcadero\Studio\Projects\Unit1.pas=D:\Projetos\Delphi\WKTech\src\pedido\uFrmPedido.pas</Transaction>
     <Transaction>2024/10/30 08:59:42.000.912,C:\Users\claud\OneDriveOLD\Documentos\Embarcadero\Studio\Projects\Project1.dproj=D:\Projetos\Delphi\WKTech\project\WKTech.dproj</Transaction>
     <Transaction>2024/10/30 09:33:17.000.553,=D:\Projetos\Delphi\WKTech\project\Unit1.pas</Transaction>
     <Transaction>2024/10/30 09:38:29.000.553,D:\Projetos\Delphi\WKTech\project\Unit1.pas=D:\Projetos\Delphi\WKTech\src\classes\RecordCliente.pas</Transaction>
@@ -26,8 +26,8 @@
     <Transaction>2024/10/31 15:10:42.000.815,D:\Projetos\Delphi\WKTech\project\Unit1.pas=D:\Projetos\Delphi\WKTech\src\template\uFrmListCadastroTemplate.pas</Transaction>
     <Transaction>2024/10/31 15:22:42.000.425,=D:\Projetos\Delphi\WKTech\project\Unit1.pas</Transaction>
     <Transaction>2024/10/31 15:23:06.000.129,=D:\Projetos\Delphi\WKTech\project\Unit1.pas</Transaction>
-    <Transaction>2024/10/31 15:23:51.000.487,D:\Projetos\Delphi\WKTech\project\Unit1.pas=D:\Projetos\Delphi\WKTech\src\modulos\uFrmListagemCliente.pas</Transaction>
     <Transaction>2024/10/31 15:23:51.000.487,D:\Projetos\Delphi\WKTech\project\Unit1.dfm=D:\Projetos\Delphi\WKTech\src\modulos\uFrmListagemCliente.dfm</Transaction>
+    <Transaction>2024/10/31 15:23:51.000.487,D:\Projetos\Delphi\WKTech\project\Unit1.pas=D:\Projetos\Delphi\WKTech\src\modulos\uFrmListagemCliente.pas</Transaction>
     <Transaction>2024/10/31 17:16:32.000.664,=D:\Projetos\Delphi\WKTech\project\ModelSupport_WKTech\default.txaPackage</Transaction>
     <Transaction>2024/10/31 17:16:57.000.867,=D:\Projetos\Delphi\WKTech\project\ModelSupport_WKTech\default.txvpck</Transaction>
     <Transaction>2024/10/31 17:17:08.000.664,=D:\Projetos\Delphi\WKTech\project\ModelSupport_WKTech\WKTech\default.txvpck</Transaction>
@@ -39,20 +39,20 @@
     <Transaction>2024/10/31 17:19:19.000.837,=D:\Projetos\Delphi\WKTech\project\ModelSupport_WKTech\uFrmListagemCliente\default.txvpck</Transaction>
     <Transaction>2024/10/31 17:19:19.000.900,=D:\Projetos\Delphi\WKTech\project\ModelSupport_WKTech\RecordPedidoDAO\default.txvpck</Transaction>
     <Transaction>2024/10/31 17:19:19.000.680,=D:\Projetos\Delphi\WKTech\project\ModelSupport_WKTech\uFrmListCadastroTemplate\default.txvpck</Transaction>
-    <Transaction>2024/10/31 17:19:20.000.290,=D:\Projetos\Delphi\WKTech\project\ModelSupport_WKTech\RecordProduto\default.txvpck</Transaction>
-    <Transaction>2024/10/31 17:19:20.000.212,=D:\Projetos\Delphi\WKTech\project\ModelSupport_WKTech\RecordItemPedido\default.txvpck</Transaction>
     <Transaction>2024/10/31 17:19:20.000.165,=D:\Projetos\Delphi\WKTech\project\ModelSupport_WKTech\uFrmPedido\default.txvpck</Transaction>
+    <Transaction>2024/10/31 17:19:20.000.212,=D:\Projetos\Delphi\WKTech\project\ModelSupport_WKTech\RecordItemPedido\default.txvpck</Transaction>
+    <Transaction>2024/10/31 17:19:20.000.290,=D:\Projetos\Delphi\WKTech\project\ModelSupport_WKTech\RecordProduto\default.txvpck</Transaction>
     <Transaction>2024/10/31 17:19:20.000.368,=D:\Projetos\Delphi\WKTech\project\ModelSupport_WKTech\RecordPedido\default.txvpck</Transaction>
     <Transaction>2024/10/31 17:20:21.000.040,=D:\Projetos\Delphi\WKTech\project\ModelSupport_WKTech\RecordPedidoDAO\default.txaPackage</Transaction>
     <Transaction>2024/10/31 17:32:18.000.337,=D:\Projetos\Delphi\WKTech\project\ModelSupport_WKTech\RecordPedido\default.txaPackage</Transaction>
     <Transaction>2024/10/31 17:41:57.000.977,=D:\Projetos\Delphi\WKTech\project\ModelSupport_WKTech\uFrmPedido\default.txaPackage</Transaction>
     <Transaction>2024/10/31 17:44:13.000.633,=D:\Projetos\Delphi\WKTech\project\ModelSupport_WKTech\RecordItemPedido\default.txaPackage</Transaction>
     <Transaction>2024/10/31 17:50:01.000.352,=D:\Projetos\Delphi\WKTech\project\ModelSupport_WKTech\uFrmListagemCliente\default.txaPackage</Transaction>
-    <Transaction>2024/10/31 17:51:51.000.727,=D:\Projetos\Delphi\WKTech\project\ModelSupport_WKTech\RecordProduto\default.txaPackage</Transaction>
-    <Transaction>2024/10/31 17:51:51.000.962,=D:\Projetos\Delphi\WKTech\project\ModelSupport_WKTech\uFrmListCadastroTemplate\default.txaPackage</Transaction>
-    <Transaction>2024/10/31 17:51:51.000.914,=D:\Projetos\Delphi\WKTech\project\ModelSupport_WKTech\RecordBancoDados\default.txaPackage</Transaction>
     <Transaction>2024/10/31 17:51:51.000.836,=D:\Projetos\Delphi\WKTech\project\ModelSupport_WKTech\App\default.txaPackage</Transaction>
     <Transaction>2024/10/31 17:51:51.000.789,=D:\Projetos\Delphi\WKTech\project\ModelSupport_WKTech\WKTech\default.txaPackage</Transaction>
+    <Transaction>2024/10/31 17:51:51.000.914,=D:\Projetos\Delphi\WKTech\project\ModelSupport_WKTech\RecordBancoDados\default.txaPackage</Transaction>
+    <Transaction>2024/10/31 17:51:51.000.962,=D:\Projetos\Delphi\WKTech\project\ModelSupport_WKTech\uFrmListCadastroTemplate\default.txaPackage</Transaction>
+    <Transaction>2024/10/31 17:51:51.000.727,=D:\Projetos\Delphi\WKTech\project\ModelSupport_WKTech\RecordProduto\default.txaPackage</Transaction>
     <Transaction>2024/10/31 17:51:52.000.040,=D:\Projetos\Delphi\WKTech\project\ModelSupport_WKTech\App\Constantes\default.txaPackage</Transaction>
     <Transaction>2024/10/31 17:54:00.000.926,D:\Projetos\Delphi\WKTech\src\classes\App.Constantes.pas=D:\Projetos\Delphi\WKTech\src\classes\Constantes.pas</Transaction>
     <Transaction>2024/10/31 19:45:41.000.182,=D:\Projetos\Delphi\WKTech\src\controller\RecordCliente.pas</Transaction>
@@ -88,6 +88,18 @@
     <Transaction>2024/10/31 23:44:20.000.430,=D:\Projetos\Delphi\WKTech\project\Unit1.pas</Transaction>
     <Transaction>2024/10/31 23:45:43.000.399,D:\Projetos\Delphi\WKTech\project\Unit1.dfm=D:\Projetos\Delphi\WKTech\src\view\pedido\uFrmListagemPedido.dfm</Transaction>
     <Transaction>2024/10/31 23:45:43.000.399,D:\Projetos\Delphi\WKTech\project\Unit1.pas=D:\Projetos\Delphi\WKTech\src\view\pedido\uFrmListagemPedido.pas</Transaction>
-    <Transaction>2024/10/31 23:59:58.806,D:\Projetos\Delphi\WKTech\src\view\pedido\uFrmListagemPedido.pas=</Transaction>
+    <Transaction>2024/10/31 23:59:58.000.806,D:\Projetos\Delphi\WKTech\src\view\pedido\uFrmListagemPedido.pas=</Transaction>
+    <Transaction>2024/11/01 00:09:07.000.252,=D:\Projetos\Delphi\WKTech\project\Unit1.pas</Transaction>
+    <Transaction>2024/11/01 00:09:26.000.815,=D:\Projetos\Delphi\WKTech\project\Unit1.pas</Transaction>
+    <Transaction>2024/11/01 00:10:25.000.907,D:\Projetos\Delphi\WKTech\project\Unit1.dfm=D:\Projetos\Delphi\WKTech\src\view\pedido\uFrmListagemPedido.dfm</Transaction>
+    <Transaction>2024/11/01 00:10:25.000.907,D:\Projetos\Delphi\WKTech\project\Unit1.pas=D:\Projetos\Delphi\WKTech\src\view\pedido\uFrmListagemPedido.pas</Transaction>
+    <Transaction>2024/11/01 00:27:10.000.948,=D:\Projetos\Delphi\WKTech\project\ModelSupport_WKTech\uClasseItemPedido\default.txvpck</Transaction>
+    <Transaction>2024/11/01 00:27:10.000.244,=D:\Projetos\Delphi\WKTech\project\ModelSupport_WKTech\uClasseProduto\default.txvpck</Transaction>
+    <Transaction>2024/11/01 00:27:10.000.775,=D:\Projetos\Delphi\WKTech\project\ModelSupport_WKTech\uClasseCliente\default.txvpck</Transaction>
+    <Transaction>2024/11/01 00:27:10.000.556,=D:\Projetos\Delphi\WKTech\project\ModelSupport_WKTech\uFrmListagemPedido\default.txvpck</Transaction>
+    <Transaction>2024/11/01 00:27:11.000.869,=D:\Projetos\Delphi\WKTech\project\ModelSupport_WKTech\ConfigConstantes\default.txvpck</Transaction>
+    <Transaction>2024/11/01 00:27:11.000.666,=D:\Projetos\Delphi\WKTech\project\ModelSupport_WKTech\uClassePedido\default.txvpck</Transaction>
+    <Transaction>2024/11/01 00:27:11.000.338,=D:\Projetos\Delphi\WKTech\project\ModelSupport_WKTech\uClassePedidoDAO\default.txvpck</Transaction>
+    <Transaction>2024/11/01 00:27:47.000.213,=D:\Projetos\Delphi\WKTech\project\ModelSupport_WKTech\uClassePedido\default.txaPackage</Transaction>
   </Transactions>
 </BorlandProject>

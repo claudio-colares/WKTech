@@ -121,6 +121,10 @@
         <DCCReference Include="..\src\controller\uClasseItemPedido.pas"/>
         <DCCReference Include="..\src\controller\uClassePedido.pas"/>
         <DCCReference Include="..\src\data_access\uClassePedidoDAO.pas"/>
+        <DCCReference Include="..\src\view\pedido\uFrmListagemPedido.pas">
+            <Form>FrmListagemPedido</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <None Include="ModelSupport_WKTech\default.txaPackage"/>
         <None Include="ModelSupport_WKTech\default.txvpck"/>
         <None Include="ModelSupport_WKTech\App\default.txvpck"/>
@@ -147,6 +151,14 @@
         <None Include="ModelSupport_WKTech\RecordBancoDados\default.txaPackage"/>
         <None Include="ModelSupport_WKTech\uFrmListCadastroTemplate\default.txaPackage"/>
         <None Include="ModelSupport_WKTech\App\Constantes\default.txaPackage"/>
+        <None Include="ModelSupport_WKTech\uClasseProduto\default.txvpck"/>
+        <None Include="ModelSupport_WKTech\uFrmListagemPedido\default.txvpck"/>
+        <None Include="ModelSupport_WKTech\uClasseCliente\default.txvpck"/>
+        <None Include="ModelSupport_WKTech\uClasseItemPedido\default.txvpck"/>
+        <None Include="ModelSupport_WKTech\uClassePedidoDAO\default.txvpck"/>
+        <None Include="ModelSupport_WKTech\uClassePedido\default.txvpck"/>
+        <None Include="ModelSupport_WKTech\ConfigConstantes\default.txvpck"/>
+        <None Include="ModelSupport_WKTech\uClassePedido\default.txaPackage"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -253,7 +265,25 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
+                <DeployFile LocalName="ModelSupport_WKTech\uClassePedidoDAO\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_WKTech\uClassePedido\default.txaPackage" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="ModelSupport_WKTech\RecordPedidoDAO\default.txaPackage" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_WKTech\ConfigConstantes\default.txvpck" Configuration="Debug" Class="ProjectFile">
                     <Platform Name="Win32">
                         <RemoteDir>.\</RemoteDir>
                         <Overwrite>true</Overwrite>
@@ -271,7 +301,19 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
+                <DeployFile LocalName="ModelSupport_WKTech\uClasseCliente\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="ModelSupport_WKTech\RecordPedido\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_WKTech\uClasseItemPedido\default.txvpck" Configuration="Debug" Class="ProjectFile">
                     <Platform Name="Win32">
                         <RemoteDir>.\</RemoteDir>
                         <Overwrite>true</Overwrite>
@@ -295,6 +337,12 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
+                <DeployFile LocalName="ModelSupport_WKTech\uFrmListagemPedido\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="ModelSupport_WKTech\RecordPedido\default.txaPackage" Configuration="Debug" Class="ProjectFile">
                     <Platform Name="Win32">
                         <RemoteDir>.\</RemoteDir>
@@ -313,6 +361,12 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
+                <DeployFile LocalName="ModelSupport_WKTech\uClassePedido\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="..\bin\WKTech.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
                         <RemoteName>WKTech.exe</RemoteName>
@@ -326,6 +380,12 @@
                     </Platform>
                 </DeployFile>
                 <DeployFile LocalName="ModelSupport_WKTech\RecordProduto\default.txaPackage" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_WKTech\uClasseProduto\default.txvpck" Configuration="Debug" Class="ProjectFile">
                     <Platform Name="Win32">
                         <RemoteDir>.\</RemoteDir>
                         <Overwrite>true</Overwrite>

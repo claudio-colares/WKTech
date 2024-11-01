@@ -10,7 +10,7 @@ uses
   FireDAC.DApt, FireDAC.UI.Intf, FireDAC.Stan.Def, FireDAC.Stan.Pool, FireDAC.Phys,
   FireDAC.Phys.MySQL, FireDAC.Phys.MySQLDef, FireDAC.VCLUI.Wait, FireDAC.Comp.Client,
   FireDAC.Comp.DataSet, System.Actions, Vcl.ActnList, RecordBancoDados, ConfigConstantes,
-  uClassePedido, uClasseItemPedido, uClassePedidoDAO;
+  uClassePedido, uClasseItemPedido, uClassePedidoDAO, uFrmListagemPedido;
 
 type
   TFrmPedidoVenda = class(TForm)
@@ -70,8 +70,10 @@ type
     procedure EncerrarAplicacao;
     procedure ConectarBase;
     function ValidarDadosPedido: boolean;
+
   public
     { Public declarations }
+    procedure CarregarDadosPedidoNaTela(Pedido: TPedido);
   end;
 
 var
@@ -117,8 +119,8 @@ begin
   end;
 
   // Configura os dados do pedido
-  FPedido.NumeroPedido   :=  0; // O número será gerado automaticamente
-  FPedido.DataEmissao    := Now;                            // dtpData_emissao.Date;
+  FPedido.NumeroPedido   := 0;   // O número será gerado automaticamente
+  FPedido.DataEmissao    := Now; // dtpData_emissao.Date;
   FPedido.Cliente.Codigo := StrToIntDef(edtIdCliente.Text, 0);
 
   // Cria e adiciona os itens ao pedido
@@ -162,13 +164,13 @@ end;
 
 procedure TFrmPedidoVenda.actPesquisaPedidoExecute(Sender: TObject);
 begin
-// try
-//   FrmListagemPedido := FrmListagemPedido.Create(Self);
-//   FrmListagemPedido.Position := poOwnerFormCenter;
-//   FrmListagemPedido.ShowModal;
-// finally
-//    FrmListagemPedido.Free;
-// end;
+  try
+    FrmListagemPedido          := TFrmListagemPedido.Create(Self);
+    FrmListagemPedido.Position := poOwnerFormCenter;
+    FrmListagemPedido.ShowModal;
+  finally
+    FrmListagemPedido.Free;
+  end;
 end;
 
 procedure TFrmPedidoVenda.AtivarTabelas(status: boolean);
@@ -176,6 +178,16 @@ begin
   QryPedido.Active     := status;
   QryItemPedido.Active := status;
 end;
+
+procedure TFrmPedidoVenda.CarregarDadosPedidoNaTela(Pedido: TPedido);
+begin
+  edtCodigo.Text        := Pedido.NumeroPedido.ToString;
+  dtpData_emissao.Date  := Pedido.DataEmissao;
+  edtIdCliente.Text     := Pedido.Cliente.Codigo.ToString;
+  edtNomeCliente.Text   := Pedido.Cliente.Nome;
+  lblValortotal.Caption := FormatFloat('R$ #,##0.00', Pedido.ValorTotal);
+end;
+
 
 procedure TFrmPedidoVenda.CentralizarTela;
 begin

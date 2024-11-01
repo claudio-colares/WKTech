@@ -1,2 +1,6 @@
 <?xml version="1.0"?>
-<TgConfig Version="3" SubLevelDisabled="False" />
+<TgConfig Version="3" SubLevelDisabled="False">
+  <Option Name="namespaceFolder.uClasseCliente" Type="System.String" Value="uClasseCliente" Category="General" IsBrowsable="False" />
+  <Option Name="namespaceFolder.ConfigConstantes" Type="System.String" Value="ConfigConstantes" Category="General" IsBrowsable="False" />
+  <Option Name="namespaceFolder.uClassePedido" Type="System.String" Value="uClassePedido" Category="General" IsBrowsable="False" />
+</TgConfig>
