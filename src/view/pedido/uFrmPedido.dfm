@@ -337,7 +337,6 @@ object FrmPedidoVenda: TFrmPedidoVenda
       'User_Name=root'
       'Database=wktechbd'
       'DriverID=MySQL')
-    Connected = True
     LoginPrompt = False
     UpdateTransaction = FDTransaction
     Left = 372

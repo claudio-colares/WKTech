@@ -2,6 +2,12 @@ inherited FrmListagemCliente: TFrmListagemCliente
   OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
+  inherited pnlListTopo: TPanel
+    inherited lbltitulo: TLabel
+      Width = 594
+      Height = 39
+    end
+  end
   inherited dbgrdDados: TDBGrid
     DataSource = dsDados
   end

@@ -24,8 +24,8 @@ object FrmListCadastroTemplate: TFrmListCadastroTemplate
     object lbltitulo: TLabel
       Left = 1
       Top = 1
-      Width = 594
-      Height = 39
+      Width = 193
+      Height = 25
       Align = alClient
       Alignment = taCenter
       Caption = 'Listagem de Clientes'
@@ -38,8 +38,6 @@ object FrmListCadastroTemplate: TFrmListCadastroTemplate
       ParentColor = False
       ParentFont = False
       Layout = tlCenter
-      ExplicitWidth = 193
-      ExplicitHeight = 25
     end
   end
   object pnlListBase: TPanel

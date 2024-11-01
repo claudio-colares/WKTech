@@ -1,3 +1,11 @@
+  {------------------------------------------+
+  |  SISTEMA.........: Teste WK Technology   |
+  |  LINGUAGEM/DB....: Delphi 10.4/Mysql 5.7 |
+  |  ANO.............: 2024                  |
+  |------------------------------------------|
+  |  Programadores/autores:                  |
+  |  - Claudio A. Colares                    |
+  +------------------------------------------}
 unit uClasseProduto;
 
 interface

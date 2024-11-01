@@ -1,3 +1,11 @@
+  {------------------------------------------+
+  |  SISTEMA.........: Teste WK Technology   |
+  |  LINGUAGEM/DB....: Delphi 10.4/Mysql 5.7 |
+  |  ANO.............: 2024                  |
+  |------------------------------------------|
+  |  Programadores/autores:                  |
+  |  - Claudio A. Colares                    |
+  +------------------------------------------}
 unit uFrmPedido;
 
 interface
@@ -111,7 +119,7 @@ var
   i   : Integer;
   Item: TItemPedido;
 begin
-  // Valida os dados do pedido
+
   if not ValidarDadosPedido then
   begin
     ShowMessage('Dados do pedido incorreto');
@@ -120,7 +128,7 @@ begin
 
   // Configura os dados do pedido
   FPedido.NumeroPedido   := 0;   // O número será gerado automaticamente
-  FPedido.DataEmissao    := Now; // dtpData_emissao.Date;
+  FPedido.DataEmissao    := Now;
   FPedido.Cliente.Codigo := StrToIntDef(edtIdCliente.Text, 0);
 
   // Cria e adiciona os itens ao pedido
@@ -139,12 +147,12 @@ begin
     end;
   end;
 
-  // Salva o pedido no banco de dados
+
   try
     if FPedidoDAO.GravarPedido(FPedido) then
       ShowMessage('Pedido salvo com sucesso!');
   finally
-    FPedido.Itens.Clear; // Libera a lista de itens após o salvamento
+    FPedido.Itens.Clear;
   end;
 end;
 
