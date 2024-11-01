@@ -23,7 +23,7 @@ uses
   Vcl.Dialogs,
   System.IniFiles,
   Data.DB,
-  Constantes,
+  ConfigConstantes,
   FireDAC.Comp.Client,
   FireDAC.Phys.MySQL;
 

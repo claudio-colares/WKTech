@@ -9,8 +9,8 @@ uses
   FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf, FireDAC.Stan.Async,
   FireDAC.DApt, FireDAC.UI.Intf, FireDAC.Stan.Def, FireDAC.Stan.Pool, FireDAC.Phys,
   FireDAC.Phys.MySQL, FireDAC.Phys.MySQLDef, FireDAC.VCLUI.Wait, FireDAC.Comp.Client,
-  FireDAC.Comp.DataSet, System.Actions, Vcl.ActnList, RecordBancoDados, Constantes,
-  RecordPedido, RecordItemPedido, RecordPedidoDAO;
+  FireDAC.Comp.DataSet, System.Actions, Vcl.ActnList, RecordBancoDados, ConfigConstantes,
+  uClassePedido, uClasseItemPedido, uClassePedidoDAO;
 
 type
   TFrmPedidoVenda = class(TForm)
@@ -55,18 +55,21 @@ type
     actRemoverItem: TAction;
     actGravar: TAction;
     actPesquisaCliente: TAction;
+    actPesquisaPedido: TAction;
     procedure FormCreate(Sender: TObject);
     procedure actFecharExecute(Sender: TObject);
     procedure actGravarExecute(Sender: TObject);
     procedure actPesquisaClienteExecute(Sender: TObject);
+    procedure actPesquisaPedidoExecute(Sender: TObject);
 
   private
-    { Private declarations }
+    FPedido   : TPedido;
+    FPedidoDAO: TPedidoDAO;
     procedure AtivarTabelas(status: boolean);
     procedure CentralizarTela;
     procedure EncerrarAplicacao;
     procedure ConectarBase;
-    function  ValidarDadosPedido: boolean;
+    function ValidarDadosPedido: boolean;
   public
     { Public declarations }
   end;
@@ -83,6 +86,18 @@ uses
 {$R *.dfm}
 { TFrmPedidoVenda }
 
+procedure TFrmPedidoVenda.FormCreate(Sender: TObject);
+begin
+  CentralizarTela;
+  setConstantes;
+  ConectarBase;
+  AtivarTabelas(true);
+
+  // Instancia FPedido e FPedidoDAO
+  FPedido    := TPedido.Create;
+  FPedidoDAO := TPedidoDAO.Create(DBConexao);
+end;
+
 procedure TFrmPedidoVenda.actFecharExecute(Sender: TObject);
 begin
   if MessageDlg('Deseja fechar o pedido de venda?', TMsgDlgType.mtConfirmation, [mbNo, mbYes], 0, mbNo) = mrYes then
@@ -91,56 +106,69 @@ end;
 
 procedure TFrmPedidoVenda.actGravarExecute(Sender: TObject);
 var
-  Pedido   : TPedido;
-  Item     : TItemPedido;
-  PedidoDAO: TPedidoDAO;
-  i        : Integer;
+  i   : Integer;
+  Item: TItemPedido;
 begin
-
+  // Valida os dados do pedido
   if not ValidarDadosPedido then
   begin
     ShowMessage('Dados do pedido incorreto');
-    edtCodigo.SetFocus;
-    exit;
+    Exit;
   end;
 
-  PedidoDAO := TPedidoDAO.Create(DBConexao);
+  // Configura os dados do pedido
+  FPedido.NumeroPedido   :=  0; // O número será gerado automaticamente
+  FPedido.DataEmissao    := Now;                            // dtpData_emissao.Date;
+  FPedido.Cliente.Codigo := StrToIntDef(edtIdCliente.Text, 0);
 
-  Pedido.NumeroPedido   := 1;   //StrToInt(edtCodigo.Text); // O número será gerado automaticamente
-  Pedido.DataEmissao    := Now; // dtpData_emissao.Date;
-  Pedido.Cliente.Codigo := 2;   // StrToInt(edtIdCliente.Text);
-
-  for i := 0 to Pedido.Itens.Count - 1 do
+  // Cria e adiciona os itens ao pedido
+  for i := 0 to FPedido.Itens.Count - 1 do
   begin
-    // Pedido.Itens[i].
-    Item.Produto.Codigo := Pedido.Itens[i].Produto.Codigo;
-    Item.Quantidade     := Pedido.Itens[i].Quantidade;
-    Item.ValorUnitario  := Pedido.Itens[i].ValorUnitario;
-    Item.ValorTotal     := Item.Quantidade * Item.ValorUnitario;
-    Pedido.Itens.Add(Item);
+    Item := TItemPedido.Create;
+    try
+      Item.Produto.Codigo := FPedido.Itens[i].Produto.Codigo;
+      Item.Quantidade     := FPedido.Itens[i].Quantidade;
+      Item.ValorUnitario  := FPedido.Itens[i].ValorUnitario;
+      Item.AtualizarValorTotal;
+      FPedido.AdicionarItem(Item);
+    except
+      Item.Free;
+      raise;
+    end;
   end;
-  // Salvar o pedido e liberar memória
+
+  // Salva o pedido no banco de dados
   try
-    if PedidoDAO.GravarPedido(Pedido) then
+    if FPedidoDAO.GravarPedido(FPedido) then
       ShowMessage('Pedido salvo com sucesso!');
   finally
-    Pedido.Itens.Free;
+    FPedido.Itens.Clear; // Libera a lista de itens após o salvamento
   end;
 end;
 
 procedure TFrmPedidoVenda.actPesquisaClienteExecute(Sender: TObject);
 begin
   if not btnPesquisaCliente.Enabled then
-    exit;
+    Exit;
 
   try
-    FrmListagemCliente            := TFrmListagemCliente.Create(Self);
-    FrmListagemCliente.Position   := poOwnerFormCenter;
+    FrmListagemCliente          := TFrmListagemCliente.Create(Self);
+    FrmListagemCliente.Position := poOwnerFormCenter;
     FrmListagemCliente.ShowModal;
   finally
     FrmListagemCliente.Free;
   end;
+end;
 
+procedure TFrmPedidoVenda.actPesquisaPedidoExecute(Sender: TObject);
+begin
+// try
+//   FrmListagemPedido := FrmListagemPedido.Create(Self);
+//   FrmListagemPedido.Position := poOwnerFormCenter;
+//   FrmListagemPedido.ShowModal;
+// finally
+//    FrmListagemPedido.Free;
+// end;
 end;
 
 procedure TFrmPedidoVenda.AtivarTabelas(status: boolean);
@@ -156,50 +184,28 @@ begin
 end;
 
 procedure TFrmPedidoVenda.ConectarBase;
-var
-  mCursor: TCursor;
-
 begin
-  mCursor := Cursor;
-
   DBConexao.Close;
   FBancoDados.GetConfigFB(DBConexao);
   FBancoDados.GetDriverLink(FDPhysMySQLDriverLink1);
 
-  Try
+  try
     Cursor := crSQLWait;
-    Try
-      DBConexao.Open;
-    Except
-      EncerrarAplicacao;
-    End;
-  Finally
-    mCursor := Cursor;
-  End;
+    DBConexao.Open;
+  except
+    EncerrarAplicacao;
+  end;
 end;
 
 procedure TFrmPedidoVenda.EncerrarAplicacao;
 begin
   AtivarTabelas(False);
   Application.Terminate;
-  TerminateProcess(GetCurrentProcess, 0);
-end;
-
-procedure TFrmPedidoVenda.FormCreate(Sender: TObject);
-begin
-  CentralizarTela;
-  setConstantes;
-
-  ConectarBase;
-  AtivarTabelas(true);
 end;
 
 function TFrmPedidoVenda.ValidarDadosPedido: boolean;
 begin
-  Result := False;
-
-  if (edtCodigo.Text <> '') and (edtIdCliente.Text <> '') and (edtNomeCliente.Text <> '') then
-    Result := true;
+  Result := (edtIdCliente.Text <> '');
 end;
 
 end.

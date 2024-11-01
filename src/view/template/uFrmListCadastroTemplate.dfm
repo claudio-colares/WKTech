@@ -12,7 +12,7 @@ object FrmListCadastroTemplate: TFrmListCadastroTemplate
   OldCreateOrder = False
   PixelsPerInch = 96
   TextHeight = 13
-  object pnlTopo: TPanel
+  object pnlListTopo: TPanel
     Left = 0
     Top = 0
     Width = 596
@@ -42,7 +42,7 @@ object FrmListCadastroTemplate: TFrmListCadastroTemplate
       ExplicitHeight = 25
     end
   end
-  object pnlBase: TPanel
+  object pnlListBase: TPanel
     Left = 0
     Top = 342
     Width = 596

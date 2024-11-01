@@ -11,8 +11,8 @@ uses
 
 type
   TFrmListCadastroTemplate = class(TForm)
-    pnlTopo: TPanel;
-    pnlBase: TPanel;
+    pnlListTopo: TPanel;
+    pnlListBase: TPanel;
     dbgrdDados: TDBGrid;
     lbltitulo: TLabel;
     QryDados: TFDQuery;

@@ -246,7 +246,7 @@ object FrmPedidoVenda: TFrmPedidoVenda
         Top = 40
         Width = 24
         Height = 21
-        Caption = '...'
+        Action = actPesquisaPedido
         TabOrder = 4
         TabStop = False
       end
@@ -255,6 +255,7 @@ object FrmPedidoVenda: TFrmPedidoVenda
         Top = 40
         Width = 68
         Height = 21
+        Enabled = False
         NumbersOnly = True
         TabOrder = 0
       end
@@ -336,6 +337,7 @@ object FrmPedidoVenda: TFrmPedidoVenda
       'User_Name=root'
       'Database=wktechbd'
       'DriverID=MySQL')
+    Connected = True
     LoginPrompt = False
     UpdateTransaction = FDTransaction
     Left = 372
@@ -395,9 +397,14 @@ object FrmPedidoVenda: TFrmPedidoVenda
       OnExecute = actGravarExecute
     end
     object actPesquisaCliente: TAction
-      Category = 'Pedido'
-      Caption = 'actPesquisaCliente'
+      Category = 'Cabecalho'
+      Caption = '...'
       OnExecute = actPesquisaClienteExecute
+    end
+    object actPesquisaPedido: TAction
+      Category = 'Cabecalho'
+      Caption = '...'
+      OnExecute = actPesquisaPedidoExecute
     end
   end
 end

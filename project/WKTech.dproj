@@ -80,7 +80,6 @@
         <DCC_RemoteDebug>true</DCC_RemoteDebug>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
-        <DCC_RemoteDebug>false</DCC_RemoteDebug>
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
         <DCC_UseMSBuildExternally>true</DCC_UseMSBuildExternally>
@@ -103,13 +102,7 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="..\src\controller\RecordCliente.pas"/>
-        <DCCReference Include="..\src\controller\RecordItemPedido.pas"/>
-        <DCCReference Include="..\src\controller\RecordPedido.pas"/>
-        <DCCReference Include="..\src\controller\RecordProduto.pas"/>
         <DCCReference Include="..\src\model\RecordBancoDados.pas"/>
-        <DCCReference Include="..\src\model\RecordPedidoDAO.pas"/>
-        <DCCReference Include="..\src\utils\Constantes.pas"/>
         <DCCReference Include="..\src\view\template\uFrmListCadastroTemplate.pas">
             <Form>FrmListCadastroTemplate</Form>
             <FormType>dfm</FormType>
@@ -122,6 +115,12 @@
             <Form>FrmPedidoVenda</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="..\src\constants\ConfigConstantes.pas"/>
+        <DCCReference Include="..\src\controller\uClasseCliente.pas"/>
+        <DCCReference Include="..\src\controller\uClasseProduto.pas"/>
+        <DCCReference Include="..\src\controller\uClasseItemPedido.pas"/>
+        <DCCReference Include="..\src\controller\uClassePedido.pas"/>
+        <DCCReference Include="..\src\data_access\uClassePedidoDAO.pas"/>
         <None Include="ModelSupport_WKTech\default.txaPackage"/>
         <None Include="ModelSupport_WKTech\default.txvpck"/>
         <None Include="ModelSupport_WKTech\App\default.txvpck"/>
@@ -257,6 +256,12 @@
                 <DeployFile LocalName="ModelSupport_WKTech\RecordPedidoDAO\default.txaPackage" Configuration="Debug" Class="ProjectFile">
                     <Platform Name="Win32">
                         <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\bin\WKTech.rsm" Configuration="Debug" Class="DebugSymbols">
+                    <Platform Name="Win32">
+                        <RemoteName>WKTech.rsm</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
